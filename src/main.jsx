@@ -7,6 +7,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage.jsx";
 import APropos from "./pages/APropos/APropos.jsx";
 import Logement from "./pages/Logement/Logement.jsx";
+// Header & Footer
+import Header from "./components/header/header.jsx";
+import Footer from "./components/footer/footer.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +33,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <Header />
     <RouterProvider router={router} />
+    <Footer />
   </StrictMode>
 );
