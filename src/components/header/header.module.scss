@@ -1,0 +1,22 @@
+.header {
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 30px;
+}
+//     img {
+//         height: 62.26px;
+//     }
+// }
+
+
+ul {
+    display: flex;
+    gap: 1rem;
+}
+
+li {
+    list-style: none;
+}
