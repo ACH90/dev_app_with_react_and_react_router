@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-
+import styles from "./NotFoundPage.module.scss";
 const NotFoundPage = () => {
   return (
-    <div>
+    <div className={styles.notFound}>
       <h1>404</h1>
-      <p>Page not found</p>
+      <h2>Oups! La page que vous demandez n'existe pas.</h2>
       <Link to="/">
-        <button>Home</button>
+        <p>Retourner sur la page d’accueil</p>
       </Link>
     </div>
   );
