@@ -1,9 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
-import App from "./App.jsx";
+import "./index.scss";
+import App from "./pages/Home/Home.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import NotFoundPage from "./components/NotFoundPage.jsx";
+// Pages
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage.jsx";
+import APropos from "./pages/APropos/APropos.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <NotFoundPage />,
+  },
+  {
+    path: "/a-propos",
+    element: <APropos />,
   },
 ]);
 
