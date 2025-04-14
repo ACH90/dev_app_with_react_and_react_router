@@ -3,7 +3,7 @@ import style from "./header.module.scss";
 const Header = () => {
   return (
     <nav className={style.header}>
-      <img src="/public/logo.png" alt="logo" />
+      <img src="/public/logo.png" alt="logo" className={style.img} />
       <ul>
         <li>
           <a href="/">Accueil</a>
