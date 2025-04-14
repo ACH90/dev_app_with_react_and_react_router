@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import styles from "./Aporpos.module.scss";
 
 const APropos = () => {
   return (
-    <div>
+    <div className={styles.apropos}>
+      <div className={styles.banner}></div>
       <div>
-        <h1>A propos</h1>
-        <Link to="/">Home</Link>
+        <section className={styles.section}></section>
       </div>
     </div>
   );
