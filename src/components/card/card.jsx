@@ -13,11 +13,11 @@ const Card = () => {
               alt={`Logement ${logement.title}`}
               style={{
                 width: "100%",
-                maxWidth: "300px",
-                marginTop: "10px",
               }}
             />
-            <p>{logement.title}</p>
+            <div className={style.containerTitle}>
+              <p className={style.title}>{logement.title}</p>
+            </div>
           </div>
         </div>
       ))}
