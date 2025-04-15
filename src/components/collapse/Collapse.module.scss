@@ -1,0 +1,17 @@
+.collapse button {
+
+    background-color: #F85D5D ;
+    color: white;
+    width: 1023px;
+    height: 54px;
+    border: none;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.collapseHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 15px;
+    align-items: center;
+}
