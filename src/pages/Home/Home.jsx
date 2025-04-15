@@ -1,4 +1,5 @@
 import styles from "./Home.module.scss";
+import Card from "/src/components/card/card.jsx";
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
           <p>Chez vous, partout et ailleurs</p>
         </div>
         <section className={styles.locationCards}>
-          <p>Toutes les localisations</p>
+          <Card />
         </section>
       </div>
     </>

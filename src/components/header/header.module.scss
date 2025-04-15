@@ -1,4 +1,10 @@
+.headerContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .header {
+    width: 1240px;
     height: 115px;
     display: flex;
     justify-content: space-between;
