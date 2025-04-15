@@ -5,7 +5,7 @@ const APropos = () => {
   return (
     <div className={styles.apropos}>
       <div className={styles.banner}></div>
-      <div>
+      <div className={styles.collapseContainer}>
         <Collapse
           title="Fiabilité"
           content="Les annonces postées garantissent une fiabilité totale"
