@@ -12,7 +12,9 @@ const APropos = () => {
         />
         <Collapse
           title="Respect"
-          content="La bienveillance fait partie des valeurs fondatrices de Kasa"
+          content="La bienveillance fait partie des valeurs fondatrices de Kasa. 
+          Tout comportement discriminatoire ou de perturbation du voisinage entrainera 
+          une exclusion de notre plateforme."
         />
         <Collapse title="Services" content="La qualité du service..." />
         <Collapse title="Sécurité" content="La sécurité..." />
