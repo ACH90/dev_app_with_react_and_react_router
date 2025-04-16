@@ -4,6 +4,7 @@ import Slideshow from "/src/components/slideshow/slideshow";
 import style from "./logement.module.scss";
 import Collapse from "/src/components/collapse/collapse";
 import Rate from "/src/components/rate/rate";
+import Tags from "/src/components/tags/tags";
 
 const Logement = () => {
   const { id } = useParams();
@@ -18,25 +19,24 @@ const Logement = () => {
       <div className={style.SlideshowContainer}>
         <Slideshow />
       </div>
-      {/* Titre et localisation */}
-      <div className={style.titleContainer}>
-        <h1>{logement.title}</h1>
-        <h2>{logement.location}</h2>
-      </div>
-      {/* Host */}
-      <div className={style.hostContainer}>
-        <h3>{logement.host.name}</h3>
-        <img src={logement.host.picture} alt={logement.host.name} />
-      </div>
-      {/* Tags */}
       <div>
-        {logement.tags.map((tag) => (
-          <p key={tag}>{tag}</p>
-        ))}
+        {/* Titre et localisation */}
+        <div className={style.titleContainer}>
+          <h1>{logement.title}</h1>
+          <h2>{logement.location}</h2>
+        </div>
+        {/* Tags */}
+        <Tags tags={logement.tags} />
       </div>
-      {/* Rate */}
-      <Rate logement={logement} />
-      <p>{logement.rating}</p>
+      <div>
+        {/* Host */}
+        <div className={style.hostContainer}>
+          <h3>{logement.host.name}</h3>
+          <img src={logement.host.picture} alt={logement.host.name} />
+        </div>
+        {/* Rate */}
+        <Rate logement={logement} />
+      </div>
       {/* Description */}
       <Collapse title="Description" content={logement.description} />
       {/* Equipements */}

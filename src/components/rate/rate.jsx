@@ -15,23 +15,9 @@ function Rate({ logement }) {
   }
 
   return (
-    <section className="pitch-container">
-      <article className={style.caracteristics}>
-        <h1>{logement.title}</h1>
-        <p>{logement.location}</p>
-        <div className="tagsList">
-          {logement.tags.map((tag) => (
-            <p key={tag}>{tag}</p>
-          ))}
-        </div>
-      </article>
-
-      <article className="owner">
-        <div className="profil">
-          <p>{logement.host.name}</p>
-          <img src={logement.host.picture} alt="" />
-        </div>
-        <div className="rating">
+    <section className={style.pitchContainer}>
+      <article className={style.owner}>
+        <div className={style.rating}>
           {ratingTab.map((elt, index) => (
             <img key={index} src={elt} alt="rating star" />
           ))}
