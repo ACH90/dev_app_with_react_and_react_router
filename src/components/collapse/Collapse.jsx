@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import styles from "./Collapse.module.scss";
 
-const Collapse = ({ title, content }) => {
+const Collapse = ({ title, content, width = "1023px" }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [maxHeight, setMaxHeight] = useState("0px");
   const contentRef = useRef(null);
@@ -15,7 +15,7 @@ const Collapse = ({ title, content }) => {
   }, [isOpen]);
 
   return (
-    <div className={styles.collapse}>
+    <div className={styles.collapse} style={{ width }}>
       <button
         className={styles.collapseHeader}
         onClick={() => setIsOpen(!isOpen)}

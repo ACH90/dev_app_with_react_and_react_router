@@ -19,33 +19,53 @@ const Logement = () => {
       <div className={style.SlideshowContainer}>
         <Slideshow />
       </div>
-      <div>
-        {/* Titre et localisation */}
-        <div className={style.titleContainer}>
-          <h1>{logement.title}</h1>
-          <h2>{logement.location}</h2>
+      <div className={style.proprietiesContainer}>
+        <div>
+          {/* Titre et localisation */}
+          <div className={style.titleContainer}>
+            <h1>{logement.title}</h1>
+            <h2>{logement.location}</h2>
+          </div>
+          {/* Tags */}
+          <Tags tags={logement.tags} />
         </div>
-        {/* Tags */}
-        <Tags tags={logement.tags} />
-      </div>
-      <div>
-        {/* Host */}
-        <div className={style.hostContainer}>
-          <h3>{logement.host.name}</h3>
-          <img src={logement.host.picture} alt={logement.host.name} />
+        <div>
+          {/* Host */}
+          <div className={style.hostContainer}>
+            <h3>
+              {logement.host.name.split(" ").map((part, index) => (
+                <span key={index}>
+                  {part}
+                  <br />
+                </span>
+              ))}
+            </h3>
+            <img
+              src={logement.host.picture}
+              alt={logement.host.name}
+              className={style.hostPicture}
+            />
+          </div>
+          {/* Rate */}
+          <Rate logement={logement} />
         </div>
-        {/* Rate */}
-        <Rate logement={logement} />
       </div>
-      {/* Description */}
-      <Collapse title="Description" content={logement.description} />
-      {/* Equipements */}
-      <div>
+      <div className={style.collapseContainer}>
+        {/* Description */}
+        <Collapse
+          title="Description"
+          content={logement.description}
+          className={style.collapse}
+          width="582px"
+        />
+        {/* Equipements */}
         <Collapse
           title="Description"
           content={logement.equipments.map((equipment) => (
             <p key={equipment}>{equipment}</p>
           ))}
+          className={style.collapse}
+          width="582px"
         />
       </div>
     </div>

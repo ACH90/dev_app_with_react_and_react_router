@@ -8,10 +8,39 @@
     justify-content: center;
 }
 
+.proprietiesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 10%;
+}
+
 .titleContainer h1{
     color: #F85D5D;
 }
 
 .hostContainer{
     color: #F85D5D;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.hostPicture{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.collapseContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 7%;
+}
+
+.collapse{
+    width: 582px;
+    background-color: black;
+
 }
