@@ -1,6 +1,7 @@
 .slideshow {
     position: relative;
-    width: 100%;
+    width: 1240px;
+    height: 415px;
     max-height: 500px;
     overflow: hidden;
   }
@@ -9,6 +10,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
   }
   
   .prev,
@@ -35,11 +37,11 @@
   .counter {
     position: absolute;
     bottom: 15px;
-    right: 20px;
+    right: 50%;
     color: white;
     font-size: 1rem;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 4px 8px;
-    border-radius: 4px;
+    // background-color: rgba(0, 0, 0, 0.3);
+    // padding: 4px 8px;
+    // border-radius: 4px;
   }
   
