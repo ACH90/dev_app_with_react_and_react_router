@@ -1,22 +1,14 @@
-import { useParams } from "react-router-dom";
-import logements from "/src/data/logements.json"; // ou ton fichier réel
 import Slideshow from "/src/components/slideshow/slideshow";
+import style from "./logement.module.scss";
 
 const Logement = () => {
-  const { id } = useParams();
-  const logement = logements.find((item) => item.id === id);
-
-  if (!logement) {
-    return <p>Logement introuvable.</p>;
-  }
-
   return (
     <div>
-      <Slideshow />
-      <h1>{logement.title}</h1>
-      <img src={logement.cover} alt={logement.title} />
-      <p>{logement.description}</p>
-      {/* etc... */}
+      <div className={style.SlideshowContainer}>
+        <Slideshow />
+      </div>
+
+      <p>Puis le reste de la page à afficher</p>
     </div>
   );
 };
