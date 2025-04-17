@@ -4,6 +4,10 @@
     height: 415px;
     max-height: 500px;
     overflow: hidden;
+    @media (max-width: 768px) {
+      width: 335px;
+      height: 255px;
+    }
   }
   
   .image {

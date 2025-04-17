@@ -9,4 +9,14 @@
     border-radius: 25px;
     padding: 5px 10px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+        width: 84px;
+        height: 18px;
+        border-radius: 10px;
+    }
 }

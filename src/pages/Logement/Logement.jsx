@@ -30,7 +30,7 @@ const Logement = () => {
           {/* Tags */}
           <Tags tags={logement.tags} />
         </div>
-        <div>
+        <div className={style.hostRateContainer}>
           {/* Host */}
           <div className={style.hostContainer}>
             <h3>
@@ -56,8 +56,7 @@ const Logement = () => {
         <Collapse
           title="Description"
           content={logement.description}
-          className={style.collapse}
-          width="582px"
+          className="collapseMedium"
         />
         {/* Equipements */}
         <Collapse
@@ -65,8 +64,7 @@ const Logement = () => {
           content={logement.equipments.map((equipment) => (
             <p key={equipment}>{equipment}</p>
           ))}
-          className={style.collapse}
-          width="582px"
+          className="collapseMedium"
         />
       </div>
     </div>

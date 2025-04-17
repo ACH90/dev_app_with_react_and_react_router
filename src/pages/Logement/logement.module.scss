@@ -1,46 +1,108 @@
 .logementContainer {
     margin-top: 50px;
-}
-
-.SlideshowContainer{
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .SlideshowContainer {
     display: flex;
-    // flex-direction: column;
     justify-content: center;
-}
 
-.proprietiesContainer{
+    @media (max-width: 768px) {
+        height: 255px;
+  }
+  }
+  
+  .proprietiesContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-inline: 10%;
-}
+    margin: 40px auto;
+    max-width: 1240px;
+    gap: 20px;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  
+  .titleContainer h1 {
+    color: #f85d5d;
+    font-size: 32px;
+  
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  
+  .titleContainer h2 {
+    font-size: 18px;
+  
+    @media (max-width: 768px) {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
 
-.titleContainer h1{
-    color: #F85D5D;
-}
-
-.hostContainer{
-    color: #F85D5D;
+  .hostRateContainer {
+    @media (max-width: 768px) {
+        display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+        
+    }
+  }
+  
+  .hostContainer {
+    color: #f85d5d;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
-}
+    text-align: right;
+    justify-content: flex-end;
+  
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+    }
+  }
 
-.hostPicture{
+  .hostContainer h3 {
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+  }
+  
+  .hostPicture {
     border-radius: 50%;
     width: 64px;
     height: 64px;
-}
 
-.collapseContainer{
+    @media (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  
+  .collapseContainer {
     display: flex;
     justify-content: space-between;
-    margin-inline: 7%;
-}
-
-.collapse{
-    width: 582px;
+    gap: 40px;
+    max-width: 1240px;
+    margin: 40px auto;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+  .collapse {
+    width: 100%;
+    max-width: 582px;
     background-color: black;
-
-}
+  }
+  

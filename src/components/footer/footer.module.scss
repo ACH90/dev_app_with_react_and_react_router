@@ -25,7 +25,10 @@
 }
 
 .div {
-    width: 133px;
+    @media (max-width: 768px) {
+        width: 133px;
     display: flex;
     justify-content: center;
+        
+    }
 }

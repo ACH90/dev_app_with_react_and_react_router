@@ -9,15 +9,25 @@ const APropos = () => {
         <Collapse
           title="Fiabilité"
           content="Les annonces postées garantissent une fiabilité totale"
+          className="collapseLarge"
         />
         <Collapse
           title="Respect"
           content="La bienveillance fait partie des valeurs fondatrices de Kasa. 
           Tout comportement discriminatoire ou de perturbation du voisinage entrainera 
           une exclusion de notre plateforme."
+          className="collapseLarge"
         />
-        <Collapse title="Services" content="La qualité du service..." />
-        <Collapse title="Sécurité" content="La sécurité..." />
+        <Collapse
+          title="Services"
+          content="La qualité du service..."
+          className="collapseLarge"
+        />
+        <Collapse
+          title="Sécurité"
+          content="La sécurité..."
+          className="collapseLarge"
+        />
       </div>
     </div>
   );

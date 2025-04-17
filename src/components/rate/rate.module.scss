@@ -130,3 +130,10 @@
 // 		height: 32px;
 // 	}
 // }
+
+.pitchContainer img{
+    @media (max-width: 780px) {
+        width: 18px;
+        height: 18px;  
+    }
+}

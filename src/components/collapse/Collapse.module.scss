@@ -1,9 +1,43 @@
 .collapse {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+  }
+  
+  /* Large version - utilisée dans aPropos */
+  .collapseLarge {
     width: 1023px;
-}
+
+    .collapseContent {
+        max-width: 1023px;
+      }
+  
+    @media (max-width: 768px) {
+      width: 335px;
+
+      .collapseContent {
+      max-width: 335px;
+    }
+    }
+  }
+  
+  /* Medium version - utilisée dans Logement */
+  .collapseMedium {
+    width: 582px;
+
+    .collapseContent {
+        max-width: 582px;
+      }
+  
+    @media (max-width: 768px) {
+      width: 335px;
+
+      .collapseContent {
+        max-width: 335px;
+      }
+    }
+  }
+  
 
 .collapse button {
     position: relative;
