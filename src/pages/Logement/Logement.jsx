@@ -5,13 +5,14 @@ import style from "./logement.module.scss";
 import Collapse from "/src/components/collapse/collapse";
 import Rate from "/src/components/rate/rate";
 import Tags from "/src/components/tags/tags";
+import { Navigate } from "react-router-dom";
 
 const Logement = () => {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id);
 
   if (!logement) {
-    return <p>Logement introuvable.</p>;
+    return <Navigate to="/error" />;
   }
 
   return (
