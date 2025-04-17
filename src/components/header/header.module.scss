@@ -11,12 +11,17 @@
     align-items: center;
     max-width: 100%;
     padding: 0 30px;
+
+    @media (max-width: 768px) {
+        width: 335px;
+        height: 111px;
+    }
 }
 
-//     img {
-//         height: 62.26px;
-//     }
-// }
+.header img {
+    width: 145px;
+    height: auto;
+}
 
 
 ul {
@@ -26,6 +31,10 @@ ul {
 
 li {
     list-style: none;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 
 // .img {

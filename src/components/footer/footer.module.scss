@@ -10,4 +10,22 @@
 .p {
     color: white;
     font-size: 24px;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+
+        font-weight: 500;
+
+        line-height: 143%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: bottom;
+
+    }
+}
+
+.div {
+    width: 133px;
+    display: flex;
+    justify-content: center;
 }

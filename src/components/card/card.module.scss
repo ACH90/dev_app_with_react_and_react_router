@@ -10,6 +10,11 @@
     max-width: 340px;
     margin-top:50px;
     position: relative; /* 👈 nécessaire pour que le titre se positionne par rapport à la card */
+
+    @media screen and (max-width: 780px) {
+        margin-top: auto;
+        
+    }
 }
 
 .cardContainer img {
