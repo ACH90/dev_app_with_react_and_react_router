@@ -1,4 +1,5 @@
 import style from "./header.module.scss";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,10 +8,20 @@ const Header = () => {
         <img src="/public/logo.png" alt="logo" className={style.img} />
         <ul>
           <li>
-            <a href="/">Accueil</a>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? style.active : "")}
+            >
+              Accueil
+            </NavLink>
           </li>
           <li>
-            <a href="/apropos">A propos</a>
+            <NavLink
+              to="/apropos"
+              className={({ isActive }) => (isActive ? style.active : "")}
+            >
+              A propos
+            </NavLink>
           </li>
         </ul>
       </nav>
