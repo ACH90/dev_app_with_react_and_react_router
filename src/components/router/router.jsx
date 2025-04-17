@@ -1,23 +1,19 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 // Pages
 import Home from "/src/pages/Home/Home.jsx";
 import NotFoundPage from "/src/pages/NotFoundPage/NotFoundPage.jsx";
 import APropos from "/src/pages/APropos/APropos.jsx";
 import Logement from "/src/pages/Logement/Logement.jsx";
-// Layout
+// Header & Footer
 import MainLayout from "/src/layouts/MainLayout.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Navigate to="/Accueil" replace />,
-  },
-  {
-    path: "/Accueil",
     element: <MainLayout />,
     children: [
       {
-        path: "",
+        index: true, // équivalent à path: "/"
         element: <Home />,
       },
       {
