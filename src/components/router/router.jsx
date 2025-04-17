@@ -4,7 +4,7 @@ import Home from "/src/pages/Home/Home.jsx";
 import NotFoundPage from "/src/pages/NotFoundPage/NotFoundPage.jsx";
 import APropos from "/src/pages/APropos/APropos.jsx";
 import Logement from "/src/pages/Logement/Logement.jsx";
-// Header & Footer
+// Layout
 import MainLayout from "/src/layouts/MainLayout.jsx";
 
 const router = createBrowserRouter([
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       {
-        index: true, // équivalent à path: "/"
+        path: "/",
         element: <Home />,
       },
       {
