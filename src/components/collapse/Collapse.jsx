@@ -39,7 +39,7 @@ const Collapse = ({ title, content, className = "" }) => {
           transition: "max-height 0.4s ease",
         }}
       >
-        <p>{content}</p>
+        {typeof content === "string" ? <p>{content}</p> : content}
       </div>
     </div>
   );
