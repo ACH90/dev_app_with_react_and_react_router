@@ -34,6 +34,7 @@ const Collapse = ({ title, content, width = "1023px" }) => {
         ref={contentRef}
         className={styles.collapseContent}
         style={{
+          width,
           maxHeight: maxHeight,
           overflow: "hidden",
           transition: "max-height 0.4s ease",
