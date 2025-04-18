@@ -60,7 +60,7 @@ const Logement = () => {
         />
         {/* Equipements */}
         <Collapse
-          title="Description"
+          title="Equipements"
           content={logement.equipments.map((equipment) => (
             <p key={equipment}>{equipment}</p>
           ))}
